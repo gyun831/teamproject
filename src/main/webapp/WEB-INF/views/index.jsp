@@ -15,58 +15,8 @@
 <link href="http://www.megabox.co.kr/css/theme.css" rel="stylesheet">
 </head>
 <body>
-<div id="wrapper">
- <header id="header">
-</header>
-	<div id="main">
-	</div>
-<div id="footer-wrap">
-</div>
-</div>
-
-
 <script>
-megabox.common.init('${path.ctx}');
-$(window).scroll(function () {
-
-	   var height = $(document).scrollTop();
-	      $('#grand1').css({'background-position-y':800-height});
-	   }); 
-
-	var slideIndex = 0;
-	carousel();
-
-	function carousel() {
-	     var i;
-	    var x = document.getElementsByClassName("mySlides");
-	     for (i = 0; i < x.length; i++) {
-	      x[i].style.display  = "none"; 
-	    }
-	     switch (slideIndex) {
-	   case 1:
-	      $('#title1').text('리틀 프린세스 소피아');
-	      $('#title2').text('DISNEY SOFIA THE FIRST');
-	      $('#title3').text('소피아 공주와 함께 떠나는 신비한 모험');
-	      break;
-	   case 2:
-	      $('#title1').text('범죄도시');
-	      $('#title2').text('THE OUTLAWS');
-	      $('#title3').text('오늘밤, 싹 쓸어버린다!');
-	      break;
-	   case 3:
-	      $('#title1').text('라 보엠');
-	      $('#title2').text('La Boheme');
-	      $('#title3').text('토레노 레지오 가극장 초연 120주년 기념작');
-	      break;
-
-	   default:
-	      break;
-	   }
-	    slideIndex++;
-	     if (slideIndex > x.length) {slideIndex = 1} 
-	     x[slideIndex-1].style.display = "block"; 
-	    setTimeout(carousel,  2000); // Change image every 2 seconds
-	};
+alert('${count}');
 </script>
 </body>
 </html>
