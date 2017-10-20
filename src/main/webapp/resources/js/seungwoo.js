@@ -10,7 +10,7 @@ seungwoo.common=(()=>{
 seungwoo.movieMain=(()=>{
 	var init=()=>{
 		ctx=$$('x');
-		$("#container").empty();
+		$("#mega_main").empty();
 		onCreate();
 	};
 	var onCreate=()=>{
@@ -70,8 +70,8 @@ seungwoo.movieMain=(()=>{
 		});
 		
 		var arr=[
-            'http://image2.megabox.co.kr/mop/poster/2017/46/F8B4A0-0392-4366-8344-9F210B198398.jpg',
-            'http://image2.megabox.co.kr/mop/poster/2017/28/5CCD96-6F15-4C2F-8F4E-CF9A9E9CF37D.jpg',
+            'http://image2.megabox.co.kr/mop/poster/2017/46/F8B4A0-0392-4366-8344-9F210B198398.large.jpg',
+            'http://image2.megabox.co.kr/mop/poster/2017/28/5CCD96-6F15-4C2F-8F4E-CF9A9E9CF37D.large.jpg',
             ];
 		
          $.each(arr,(i,j)=>{
@@ -94,13 +94,13 @@ seungwoo.movieMain=(()=>{
 		/*each 안에 들어갈 것-끝*/
 	};
 	var setContentView=()=>{
-		$("#container")
+		$("#mega_main")
 			.append($('<div/>',{class:"content_wrap"}));
 		
 		$(".content_wrap")
 			.append($('<div/>',{class:"header-btn-wrap"}))
 			.append($('<div/>',{class:"sub_navi"}))
-			.append($('<div/>',{id:"main",class:"main-content"}))
+			.append($('<div/>',{id:"main-content",class:"main-content"}))
 			.append($('<div/>',{id:"movie_detail",class:"modal fade"}));
 		
 		$(".header-btn-wrap")
@@ -571,7 +571,7 @@ seungwoo.movieDetail=((()=>{
 seungwoo.movieInteresting=(()=>{
 	var init=()=>{
 		ctx=$$('x');
-		$("#container").empty();
+		$("#mega_main").empty();
 		onCreate();
 	};
 	var onCreate=()=>{
@@ -594,10 +594,10 @@ seungwoo.movieInteresting=(()=>{
 			});
 	};
 	var setContentView=()=>{
-		$("#container").append($('<div/>',{class:'content_wrap'}));
+		$("#mega_main").append($('<div/>',{class:'content_wrap'}));
 		$(".content_wrap").append($('<div/>',{class:"header-btn-wrap"}))
 			.append($('<div/>',{class:"sub_navi"}))
-			.append($('<div/>',{id:"main",class:"main-content"}))
+			.append($('<div/>',{id:"main-content",class:"main-content"}))
 			.append($('<div/>',{id:"movie_detail",class:"modal fade"}));
 		
 		$(".header-btn-wrap")
@@ -634,7 +634,7 @@ seungwoo.movieInteresting=(()=>{
 seungwoo.movieStory=(()=>{
 	var init=()=>{
 		ctx=$$('x');
-		$("#container").empty();
+		$("#mega_main").empty();
 		onCreate();
 	};
 	var onCreate=()=>{
@@ -700,12 +700,12 @@ seungwoo.movieStory=(()=>{
 			});
 	};
 	var setContentView=()=>{
-		$("#container")
+		$("#mega_main")
 			.append($('<div/>',{class:'content_wrap'}));
 		$(".content_wrap")
 			.append($('<div/>',{class:"header-btn-wrap"}))
 			.append($('<div/>',{class:"sub_navi"}))
-			.append($('<div/>',{id:"main",class:"main-content"}))
+			.append($('<div/>',{id:"main-content",class:"main-content"}))
 			.append($('<div/>',{id:"movie_detail",class:"modal fade"}));
 		
 		$(".header-btn-wrap")

@@ -20,7 +20,7 @@
 <link href="http://www.megabox.co.kr/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-<div id="container">
+<div id="mega_main">
 
 </div>
 </body>
