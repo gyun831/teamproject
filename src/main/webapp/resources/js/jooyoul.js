@@ -37,7 +37,6 @@ joo.index =(function(){
 //			 joo.mega.passalert();
 		 			 					 	
 	};
-
 	return{init:init};
 })();
 
