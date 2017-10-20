@@ -7,7 +7,7 @@ reservation.index=(function(){
 		reservation.event.init();
 	};
 	var onCreate=()=>{
-		var mainUI=  '<!-- Modal --> '
+		var mainUI=  '<!-- Modal -->'
 		      +' <div id="myModal" class="modal fade" role="dialog">'
 	          +' <div tabindex="0" id="booking">'
 	            +' <div tabindex="0" class="modal fade booking_lp in" id="reservation"'
