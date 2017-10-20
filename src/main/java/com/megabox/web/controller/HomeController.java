@@ -28,12 +28,12 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-		IGetService service = null;
+		/*IGetService service = null;
 		service = (x)-> {
 			return memberMapper.count(cmd);
-		};
+		};*/
 		model.addAttribute("path",PathFactory.create());
-		model.addAttribute("count",service.execute(cmd));
+		//model.addAttribute("count",service.execute(cmd));
 		
 		return "index";
 	}
