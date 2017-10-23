@@ -92,17 +92,15 @@ joo.mega=(()=>{
 	var loginbox =()=>{
 		init();
 		$.getScript(temp,()=>{
-			alert('loginbox : ');
-			$container.html(memberUI.loginbox());
-			$('#top_logo a').click(e=>{
-				alert('메인');
-			});
+			$('.member_info').after(memberUI.loginbox());
 			$('#name_membership_c_mint').click(e=>{
 				alert('예매확인/취소');
+				$('#myinfo_wrap').attr('class','login_info remove_loginInfo');
 				joo.mega.ticketingcancel();
 			});
 			$(".middle ul li").eq(0).click(e=>{
 				alert('나의 메가박스');
+				$('#myinfo_wrap').attr('class','login_info remove_loginInfo');
 				joo.mega.mymegabox();
 			});
 			$(".middle ul li").eq(1).click(e=>{
@@ -115,7 +113,7 @@ joo.mega=(()=>{
 				alert('로그 아웃');
 			});
 			$(".myinfo_close").click(e=>{
-				alert('닫기');
+				$('#myinfo_wrap').attr('class','login_info remove_loginInfo');
 			});		 					 	
 		 });
 		

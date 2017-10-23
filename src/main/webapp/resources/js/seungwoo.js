@@ -151,7 +151,7 @@ seungwoo.movieDetail=((()=>{
 				$("#movie_detail").empty();
 			});
 		
-		/* [영화상세 정보] 
+		/* [영화상세 정보] */
 		$('<i/>')
 			.addClass('age_l age_12_l')
 			.text('XX세관람가')
@@ -163,10 +163,10 @@ seungwoo.movieDetail=((()=>{
 			.addClass('right_p')
 			.html('예매율<strong>xx</strong>위<span> x.x% </span>')
 			.appendTo('.reservation_wrap');
-		$('<button/>'
+		$('<button/>')
 			.addClass('img_btn movie btn_reservation')
 			.text('예매하기')
-			.appendTo('.reservation_wrap'
+			.appendTo('.reservation_wrap')
 			.click(e=>{
 				alert('예매하기');
 			});
