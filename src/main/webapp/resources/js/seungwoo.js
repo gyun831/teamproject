@@ -163,7 +163,7 @@ seungwoo.movieDetail=((()=>{
 			.addClass('right_p')
 			.html('예매율<strong>xx</strong>위<span> x.x% </span>')
 			.appendTo('.reservation_wrap');
-		$('<button/>')
+		$('<button/>'
 			.addClass('img_btn movie btn_reservation')
 			.text('예매하기')
 			.appendTo('.reservation_wrap')
