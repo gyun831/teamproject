@@ -166,7 +166,7 @@ seungwoo.movieDetail=((()=>{
 		$('<button/>'
 			.addClass('img_btn movie btn_reservation')
 			.text('예매하기')
-			.appendTo('.reservation_wrap')
+			.appendTo('.reservation_wrap'
 			.click(e=>{
 				alert('예매하기');
 			});
